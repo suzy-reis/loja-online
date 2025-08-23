@@ -36,7 +36,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: us-central1-docker.pkg.dev/id_projeto/frontend/frontend:latest
+          image: us-east1-docker.pkg.dev/cluster-gke-465620/frontend/frontend:latest
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -96,4 +96,4 @@ spec:
       volumes:
       - name: frontend-data
         persistentVolumeClaim:
-          claimName: pvc-frontend
+          claimName: pvc-frontend-new
